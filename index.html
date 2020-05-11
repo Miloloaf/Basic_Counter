@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet"> 
+
+<style>
+    html, body {
+        height: 100%;
+    }
+
+    body{
+        background-image: url("https://images.unsplash.com/photo-1495195129352-aeb325a55b65?ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80");
+        background-position: center;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .box{
+        border: 1.5px solid black;
+        height: 300px;
+        width: 300px;
+        box-shadow: 5px 10px 20px 5px black;
+        text-align: center;
+        justify-items: center;
+    }
+
+    /* .box:hover{
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 10px 20px 40px 10px black;
+    } */
+
+    h1{
+        display: inline-block;
+
+    }
+
+    .counter {
+        font-size: 100px;
+        margin-top: -20px;
+    }
+    button{
+        background-color:black;
+        color: white;
+        height: 30px;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="counter.js"></script>
+    
+    <title>Counter</title>
+</head>
+<body>
+    <div class="wrapper" id="wrapper">
+        <div class="box">
+            <h1>COUNTER</h1>
+            <div class="counter" id="counter">0</div>
+
+            <button id="decrease_button" onclick="decreaseCount()" onmousedown="mouseDownInc(decreaseCount)" onmouseup="mouseUpInc()">DECREASE</button>
+            <button id="increase_button" onclick="increaseCount()" onmousedown="mouseDownInc(increaseCount)" onmouseup="mouseUpInc()">INCREASE</button>
+
+
+        </div>
+
+    </div>
+    
+
+</body>
+</html>
